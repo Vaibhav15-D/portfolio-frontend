@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Learn With Vaibhav</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="learn-body">
+
+<div class="learn-overlay">
+  <div class="learn-header">
+    <h1>Learn With Us</h1>
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </div>
+
+  <section class="learn-intro">
+    <h2>Upgrade Your Career With Industry-Ready Skills</h2>
+    <p>Beginner to advanced courses in AI, backend development, analytics and web technologies.</p>
+  </section>
+
+  <section class="learn-container">
+
+    <div class="course-card-lg" onclick="openCourseDetail('python')">
+      <img src="assets/python-course.jpg">
+      <h3>Python for Beginners</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('sql')">
+      <img src="assets/sql-course.jpg">
+      <h3>SQL for Data Analysis</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('powerbi')">
+      <img src="assets/powerbi-course.jpg">
+      <h3>Power BI Dashboard Mastery</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('ml')">
+      <img src="assets/ml-course.jpg">
+      <h3>Machine Learning Foundations</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('ai')">
+      <img src="assets/ai-course.jpg">
+      <h3>Artificial Intelligence</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('fastapi')">
+      <img src="assets/fastapi-course.jpg">
+      <h3>FastAPI Backend Development</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('django')">
+      <img src="assets/django-course.jpg">
+      <h3>Django Full Stack</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('js')">
+      <img src="assets/js-course.jpg">
+      <h3>JavaScript Mastery</h3>
+    </div>
+
+    <div class="course-card-lg" onclick="openCourseDetail('ds')">
+      <img src="assets/ds-course.jpg">
+      <h3>Data Science Essentials</h3>
+    </div>
+
+  </section>
+
+  <section class="ebook-section">
+    <h2>Free eBooks</h2>
+    <div class="ebook-grid">
+      <div class="ebook-card">Python Interview Guide</div>
+      <div class="ebook-card">SQL Cheat Sheet</div>
+      <div class="ebook-card">Power BI Dashboard Templates</div>
+    </div>
+  </section>
+</div>
+
+<!-- Course Modal -->
+<div id="learnModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeLearn()">&times;</span>
+<h2 id="learnTitle"></h2>
+<p id="learnDesc"></p>
+<p><b>Includes:</b> <span id="learnTopics"></span></p>
+<button class="glow-btn">Buy Course</button>
+</div>
+</div>
+
+<script src="js/learn.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Soft Skills Training</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="soft-body">
+
+<div class="soft-header">
+  <h1>Soft Skills Training</h1>
+  <a href="index.html" class="back-home">← Back to Home</a>
+</div>
+
+<section class="soft-grid">
+  <div class="soft-card" onclick="startTest('communication')">Communication Skills</div>
+  <div class="soft-card" onclick="startTest('interview')">Interview Preparation</div>
+  <div class="soft-card" onclick="startTest('confidence')">Confidence Building</div>
+  <div class="soft-card" onclick="startTest('team')">Team Collaboration</div>
+</section>
+
+<div id="testBox" class="soft-test">
+  <h2 id="testTitle"></h2>
+  <p id="question"></p>
+  <button onclick="answer(true)">Option A</button>
+  <button onclick="answer(false)">Option B</button>
+</div>
+
+<script src="js/softskills.js"></script>
+</body>
+</html>

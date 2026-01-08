@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vaibhav Dukare | AI Engineer</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"><div class="hex">VD</div></div>
+
+  <nav>
+    <ul id="menu">
+      <li><a href="#home" class="active">Home</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="learn.html">Learn</a></li>
+
+      <li><a href="softskills.html">Soft Skills</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-left">
+    <h1>Hi,<br>I'm <span class="highlight">Vaibhav Dukare</span></h1>
+    <h2 class="typing"></h2>
+    <a href="about.html" class="glow-btn">About Me</a>
+
+    <div class="socials">
+  <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://youtube.com/@yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://dev.to/yourusername" target="_blank"><i class="fab fa-dev"></i></a>
+</div>
+
+  </div>
+
+  <div class="hero-right">
+    <div class="photo-bg"></div>
+    <img src="assets/profile.jpg" class="profile">
+  </div>
+</section>
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>Data Science</span>
+    <span>FastAPI</span>
+    <span>Django</span>
+    <span>PostgreSQL</span>
+    <span>JavaScript</span>
+    <span>HTML & CSS</span>
+    <span>Power BI</span>
+  </div>
+</section>
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="cert-grid">
+    <div class="cert-card">Python – Coursera & GeeksForGeeks</div>
+    <div class="cert-card">JavaScript – freeCodeCamp</div>
+    <div class="cert-card">SQL – HackerRank</div>
+    <div class="cert-card">Power BI – Microsoft Certified</div>
+  </div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+  <div class="card" onclick="openProject('library')"><img src="assets/mgm.png"><h3>Library System</h3></div>
+  <div class="card" onclick="openProject('portfolio')"><img src="assets/port.png"><h3>Portfolio Website</h3></div>
+  <div class="card" onclick="openProject('powerbi')"><img src="assets/dash.png"><h3>Power BI Dashboard</h3></div>
+</div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+  <h2>Let's Work Together</h2>
+  <p class="contact-sub">Have a project, query or collaboration idea? Send me a message.</p>
+
+  <div class="contact-card">
+    <div class="field">
+      <label>Full Name</label>
+      <input id="name" required placeholder="Enter your full name">
+    </div>
+
+    <div class="field">
+      <label>Email Address</label>
+      <input id="email" required placeholder="Enter your email">
+    </div>
+
+    <div class="field">
+      <label>Mobile Number</label>
+      <input id="mobile" required placeholder="Enter your mobile number">
+    </div>
+
+    <div class="field">
+      <label>Profession</label>
+      <select id="profession" required>
+        <option>Student</option>
+        <option>Professional</option>
+        <option>Business Owner</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Purpose of Contact</label>
+      <input id="purpose" required placeholder="Purpose of contact">
+    </div>
+
+    <div class="field">
+      <label>Message</label>
+      <textarea id="msg" placeholder="Write your detailed message here..."></textarea>
+    <div class="contact-card">
+   ...
+   <button onclick="send()">Send Message</button>
+</div>
+
+</section>
+
+<div id="projectModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeProject()">&times;</span>
+<h2 id="projectTitle"></h2>
+<p id="projectDesc"></p>
+<p><b>Technologies:</b> <span id="projectTech"></span></p>
+</div>
+</div>
+
+<div id="courseModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeCourse()">&times;</span>
+<h2 id="courseTitle"></h2>
+<iframe id="courseVideo" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
