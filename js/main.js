@@ -1,4 +1,5 @@
-const API="http://127.0.0.1:8000";
+const API=const API = "https://portfolio-db-ol5t.onrender.com";
+;
 const text="I Am Into Software Development | AI | Data Science";
 let i=0;
 setInterval(()=>{document.querySelector(".typing").innerText=text.slice(0,i++);if(i>text.length)i=0;},100);
@@ -13,7 +14,8 @@ async function send(){
     message: document.getElementById("msg").value
   };
 
-  await fetch("http://127.0.0.1:8000/contact",{
+  await fetch(const API = "https://portfolio-db-ol5t.onrender.com";
+/contact",{
     method:"POST",
     headers:{"Content-Type":"application/json"},
     body: JSON.stringify(body)
